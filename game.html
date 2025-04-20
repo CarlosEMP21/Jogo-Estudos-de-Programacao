@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Simulação com IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Simulação com IA</h1>
+            <p>Use as setas do teclado ou programe os movimentos para mover o robô e completar as tarefas!</p>
+        </div>
+    </header>
+
+    <main id="game-area">
+        <div id="info-panel">
+            <p id="levelInfo">Nível: 1</p>
+            <p id="taskInfo">Tarefa: Configure o robô para otimizar a produção.</p>
+            <p id="scoreInfo">Pontuação: 0</p>
+        </div>
+        <canvas id="gameCanvas" width="800" height="400" style="border: 1px solid #000;"></canvas>
+
+        <div id="controls">
+            <button id="startButton" class="btn">Iniciar</button>
+            <button id="resetButton" class="btn">Reiniciar</button>
+            <button id="backButton" class="btn">Voltar à Tela Inicial</button> <!-- Novo botão -->
+        </div>
+
+        <div id="programming-panel">
+            <h3>Programação de Movimentos</h3>
+            <div id="command-buttons">
+                <button class="command-btn" data-command="Cima">Cima</button>
+                <button class="command-btn" data-command="Baixo">Baixo</button>
+                <button class="command-btn" data-command="Esquerda">Esquerda</button>
+                <button class="command-btn" data-command="Direita">Direita</button>
+            </div>
+            <div id="command-sequence">
+                <p>Sequência: <span id="command-list"></span></p>
+            </div>
+            <button id="executeCommands" class="btn">Executar Sequência</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Simulação com IA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Redireciona para a tela inicial
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
