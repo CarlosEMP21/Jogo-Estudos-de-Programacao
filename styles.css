@@ -1,0 +1,253 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #00509e, #003f7d);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #e68900;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00509e;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.cta {
+    background: #00509e;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #e68900;
+}
+
+/* Footer */
+.footer {
+    background: #003f7d;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+/* Game Area */
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/*#gameCanvas {
+    border: 2px solid #003f7d;
+    margin-bottom: 20px;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+}*/
+
+#gameCanvas {
+    border: 2px solid #003f7d;
+    margin-bottom: 20px;
+    background-image: url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #003f7d;
+    border-radius: 10px;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+}
+
+#controls button {
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#controls button:hover {
+    background: #003f7d;
+}
+
+/* Info Area */
+#info-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#info-area h2 {
+    color: #00509e;
+    margin-bottom: 15px;
+}
+
+#info-area p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Área de Botões de Comando */
+#command-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;  /* Centraliza os botões horizontalmente */
+    flex-wrap: wrap;  /* Permite que os botões se ajustem na linha seguinte se necessário */
+    margin-bottom: 20px;
+}
+
+.command-btn {
+    background-color: #00509e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 100px;  /* Tamanho mínimo do botão */
+    text-align: center;  /* Garantir que o texto esteja centralizado */
+}
+
+.command-btn:hover {
+    background: #003f7d;
+}
+
+/* Área de Texto de Comando */
+#command-sequence {
+    text-align: center;  /* Alinha o texto de forma centralizada */
+    word-wrap: break-word;  /* Faz a quebra de linha quando o texto for longo */
+    max-width: 90%;  /* Limita a largura do texto */
+    margin: 0 auto;  /* Centraliza o texto na tela */
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Estilo do painel de programação de movimentos */
+#programming-panel {
+    text-align: center;  /* Centraliza o conteúdo dentro do painel */
+    max-width: 900px;  /* Limita a largura máxima do painel */
+    margin: 0 auto;  /* Centraliza o painel na tela */
+}
+
+/* Título de "Programação de Movimentos" */
+#programming-panel h3 {
+    font-size: 1.8rem;
+    color: #00509e;
+    margin-bottom: 20px;
+}
+
+/* Área de sequência de comandos */
+#command-sequence {
+    text-align: center;  /* Garante que o texto de sequência fique centralizado */
+    word-wrap: break-word;  /* Quebra as palavras se necessário */
+    max-width: 80%;  /* Limita a largura do texto da sequência */
+    margin: 0 auto 20px auto;  /* Centraliza e adiciona uma margem inferior */
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Ajusta o estilo do botão de comando */
+.command-btn {
+    background-color: #00509e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.command-btn:hover {
+    background: #003f7d;
+}
